@@ -28,11 +28,6 @@ class InputParser():
 		else:
 			print('{} Must be the sum of two integer numbers!'.format(inputStr))
 
-	
-
-		
-
-
 	def controlString(inputStr):
 		isNum = True
 		containsPlusSign = False
@@ -88,25 +83,25 @@ class InputParser():
 		b = int(subString)
 		return a+b
 
-
-	#BUG: sometimes looks like it repeats the first line
 	def getString(digits, save=False, filename=None):
 		resultString =''
 		NUM_LINES = 7
 		ROWS_PER_DIGIT = 5
 		spaceIndexes = (5, 11, 17, 23, 29, 35, 41, 47, 53, 60)
+		firstIte =True
 
 		#number of chars in a row, adding spaces
 		charsInRow = (ROWS_PER_DIGIT * len(digits)) + (len(digits) - 1) 
 		actualDigitCharCount = 0
 		actualDigitIdx = 0
 
-		print(charsInRow, len(digits))
-
 		for line in range(NUM_LINES):
 			actualDigitIdx = 0
 			actualDigitCharCount = line * ROWS_PER_DIGIT
-			resultString +='\n' 
+			if not firstIte:
+				resultString +='\n'
+			else:
+				firstIte = False 
 			for i in range(charsInRow):
 				
 				#new line
