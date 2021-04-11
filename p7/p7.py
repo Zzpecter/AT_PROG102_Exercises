@@ -3,7 +3,6 @@
 
 import argparse
 from person import Person
-from dailyReport import DailyReport
 
 FARE = 0.1
 if __name__ == '__main__':
