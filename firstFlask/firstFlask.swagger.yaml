@@ -1,0 +1,153 @@
+---
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: "0.1"
+servers:
+- url: http://localhost:5000
+paths:
+  /add:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            text/html; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+      - url: http://localhost:5000
+    servers:
+    - url: http://localhost:5000
+  /books:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: {}
+              examples:
+                "0":
+                  value: "[\n  {\n    \"author\": \"Vernor Vinge\", \n    \"first_sentence\": \"The coldsleep itself was dreamless.\", \n    \"id\": 0, \n    \"title\": \"A Fire Upon the Deep\", \n    \"year_published\": \"1992\"\n  }, \n  {\n    \"author\": \"Ursula K. Le Guin\", \n    \"first_sentence\": \"With a clamor of bells that set the swallows soaring, the Festival of Summer came to the city Omelas, bright-towered by the sea.\", \n    \"id\": 1, \n    \"published\": \"1973\", \n    \"title\": \"The Ones Who Walk Away From Omelas\"\n  }, \n  {\n    \"author\": \"Samuel R. Delany\", \n    \"first_sentence\": \"to wound the autumnal city.\", \n    \"id\": 2, \n    \"published\": \"1975\", \n    \"title\": \"Dhalgren\"\n  }\n]\n"
+      servers:
+      - url: http://localhost:5000
+    servers:
+    - url: http://localhost:5000
+  /book/0:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+              examples:
+                "0":
+                  value: "{\n  \"author\": \"Vernor Vinge\", \n  \"first_sentence\": \"The coldsleep itself was dreamless.\", \n  \"id\": 0, \n  \"title\": \"A Fire Upon the Deep\", \n  \"year_published\": \"1992\"\n}\n"
+      servers:
+      - url: http://localhost:5000
+    servers:
+    - url: http://localhost:5000
+  /book/1:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_1'
+              examples:
+                "0":
+                  value: "{\n  \"author\": \"Ursula K. Le Guin\", \n  \"first_sentence\": \"With a clamor of bells that set the swallows soaring, the Festival of Summer came to the city Omelas, bright-towered by the sea.\", \n  \"id\": 1, \n  \"published\": \"1973\", \n  \"title\": \"The Ones Who Walk Away From Omelas\"\n}\n"
+      servers:
+      - url: http://localhost:5000
+    servers:
+    - url: http://localhost:5000
+  /book/2:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200_1'
+              examples:
+                "0":
+                  value: "{\n  \"author\": \"Samuel R. Delany\", \n  \"first_sentence\": \"to wound the autumnal city.\", \n  \"id\": 2, \n  \"published\": \"1975\", \n  \"title\": \"Dhalgren\"\n}\n"
+      servers:
+      - url: http://localhost:5000
+    servers:
+    - url: http://localhost:5000
+  /book/3:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            text/html; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+      - url: http://localhost:5000
+    servers:
+    - url: http://localhost:5000
+  /:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            text/html; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+        default:
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: http://localhost:5000
+    servers:
+    - url: http://localhost:5000
+components:
+  schemas:
+    inline_response_200:
+      type: object
+      properties:
+        author:
+          type: string
+        first_sentence:
+          type: string
+        id:
+          type: integer
+        title:
+          type: string
+        year_published:
+          type: string
+    inline_response_200_1:
+      type: object
+      properties:
+        author:
+          type: string
+        first_sentence:
+          type: string
+        id:
+          type: integer
+        published:
+          type: string
+        title:
+          type: string
